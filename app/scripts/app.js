@@ -40,6 +40,11 @@ angular
         controller: 'EmailCtrl',
         controllerAs: 'email'
       })
+      .when('/centres/:id', {
+        templateUrl: 'views/centres.html',
+        controller: 'CentresCtrl',
+        controllerAs: 'centres'
+      })
       .otherwise({
         redirectTo: '/'
       });
