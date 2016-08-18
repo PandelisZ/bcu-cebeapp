@@ -61,17 +61,29 @@ body {
 .navbar {
   height: 150px;
 
+  .logo {
+    height: 150px;
+    float:left;
+  }
+
   .container {
     width: 100%;
     max-width: 100%;
   }
 
   .navbar-header {
-    width: 100%;
+    float:left;
+  }
+
+  .navbar-brand {
+    font-size: 36px;
+    margin-top: 46px;
+  }
+  .navbar-collapse {
   }
 
   .navbar-nav {
-    float: right;
+    margin-top: 46px;
   }
 }
 
