@@ -8,11 +8,9 @@
  * Controller of the cebeApp
  */
 
-var welcomeWeek = 'thing';
-
 angular.module('cebeApp')
-  .controller('CentresCtrl', function ($scope, $routeParams) { 
+  .controller('CentresCtrl', function ($scope, $routeParams) {
     $scope.centre = $routeParams.id;
 
-    $scope.thing = welcomeWeek;
+
   });
