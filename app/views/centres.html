@@ -1,1 +1,36 @@
 <p>This is the centres view for {{centre}}</p>
+
+<div class="accordion">
+    <ol>
+        <li>
+            <h2><span>Monday 19<sup>th</sup></span></h2>
+            <div ng-include="'views/centres/'+centre+'/monday.html'" class="centre-scrollable" style="overflow:scroll;"></div>
+        </li>
+        <li>
+            <h2><span>Tuesday 20<sup>th</sup></span></h2>
+            <div ng-include="'views/centres/'+centre+'/tuesday.html'"class="centre-scrollable" style="overflow:scroll;"></div>
+        </li>
+        <li>
+            <h2><span>Thursday 22<sup>nd</sup></span></h2>
+            <div ng-include="'views/centres/'+centre+'/thursday.html'"class="centre-scrollable" style="overflow:scroll;"></div>
+        </li>
+        <li>
+            <h2><span>Friday 23<sup>rd</sup></span></h2>
+            <div ng-include="'views/centres/'+centre+'/friday.html'"class="centre-scrollable" style="overflow:scroll;"></div>
+        </li>
+        <li>
+            <h2><span>Key Contacts</span></h2>
+            <div ng-include="'views/centres/'+centre+'/contacts.html'"class="centre-scrollable" style="overflow:scroll;"></div>
+        </li>
+        <li>
+            <h2><span>Map</span></h2>
+            <div ng-include="'views/centres/map.html'"class="centre-scrollable" style="overflow:scroll;"></div>
+        </li>
+    </ol>
+    <noscript>
+        <p>Please enable JavaScript to get the full experience.</p>
+    </noscript>
+</div>
+<script>
+$('.accordion').liteAccordion();
+</script>
