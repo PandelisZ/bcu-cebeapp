@@ -39,10 +39,10 @@ angular
         controller: 'CentresCtrl',
         controllerAs: 'centres'
       })
-      .when('/cource/:id', {
-        templateUrl: 'views/cource.html',
-        controller: 'CourceCtrl',
-        controllerAs: 'cource'
+      .when('/course/:id', {
+        templateUrl: 'views/course.html',
+        controller: 'CourseCtrl',
+        controllerAs: 'course'
       })
       .when('/email', {
         templateUrl: 'views/email.html',

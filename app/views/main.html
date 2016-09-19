@@ -1,24 +1,36 @@
-<div class="col-sm-6 col-md-6">
+<h1> Digital Media</h1>
+<div ng-repeat="d in dmt" class="col-sm-3 col-md-4">
 	<div class="thumbnail tile tile-wide tile-orange">
-		<a href="#/centres/escc" >
+		<a href="#/course/{{d}}" >
 			<h1 class="tile-text">
-				Enterprise Systems / Cloud / Cyber </h1>
+				 {{d}}</h1>
 		</a>
 	</div>
 </div>
-<div class="col-sm-6 col-md-6">
-	<div class="thumbnail tile tile-wide tile-orange">
-		<a href="#/centres" >
+<h1> Engineering </h1>
+<div ng-repeat="e in engineering" class="col-sm-3 col-md-4">
+	<div class="thumbnail tile tile-wide tile-blue">
+		<a href="#/course/{{e}}" >
 			<h1 class="tile-text">
-				 Centres</h1>
+				 {{e}}</h1>
 		</a>
 	</div>
 </div>
-<div class="col-sm-6 col-md-6">
-	<div class="thumbnail tile tile-wide tile-orange">
-		<a href="#" >
+<h1>Computing</h1>
+<div ng-repeat="c in computing" class="col-sm-3 col-md-4">
+	<div class="thumbnail tile tile-wide tile-purple">
+		<a href="#/course/{{c}}" >
 			<h1 class="tile-text">
-				I'm the 2!</h1>
+				 {{c}}</h1>
+		</a>
+	</div>
+</div>
+<h1>Built Enviroment</h1>
+<div class="col-sm-3 col-md-4">
+	<div class="thumbnail tile tile-wide tile-green">
+		<a href="#/course/Built Enviroment" >
+			<h1 class="tile-text">
+				 All Built Enviroment</h1>
 		</a>
 	</div>
 </div>

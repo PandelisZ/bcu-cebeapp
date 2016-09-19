@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc function
- * @name cebeApp.controller:CourceCtrl
+ * @name cebeApp.controller:CourseCtrl
  * @description
- * # CourceCtrl
+ * # CourseCtrl
  * Controller of the cebeApp
  */
 angular.module('cebeApp')
@@ -15,13 +15,13 @@ angular.module('cebeApp')
     }
   };
 })
-  .controller('CourceCtrl', function (getSchedule, $http, $scope, $routeParams) {
-    $scope.courceName = $routeParams.id;
+  .controller('CourseCtrl', function (getSchedule, $http, $scope, $routeParams) {
+    $scope.courseName = $routeParams.id;
 
     function searchSchedule(data,searchString) {
       var result = [];
       for (var i = 0; i < data.length; i++){
-        if (data[i].cource === searchString) {
+        if (data[i].course === searchString) {
           result.push(data[i]);
         }
       }
@@ -29,7 +29,7 @@ angular.module('cebeApp')
     }
 
     getSchedule.async().then(function(d) { //2. so you can use .then()
-    $scope.schedule = searchSchedule(d.data, $scope.courceName);
+    $scope.schedule = searchSchedule(d.data, $scope.courseName);
 
   });
 
