@@ -1,0 +1,157 @@
+<p>This is the cource view for {{courceName}}</p>
+
+<div>
+{{schedule}}
+</div>
+
+<div class="accordion">
+    <ol>
+        <li>
+            <h2><span>Monday 19<sup>th</sup></span></h2>
+            <div class="centre-scrollable" style="overflow:scroll;">
+              <table class="table table-bordered table-striped table-hover table-responsive" >
+              	<thead>
+              		<tr>
+              			<th>
+              				Time
+              			</th>
+              			<th>
+              				Room
+              			</th>
+              			<th>
+              				Activity
+              			</th>
+              		</tr>
+              	</thead>
+              	<tbody ng-repeat="activity in schedule | filter: { date: '19/09/2016' }">
+              		<tr>
+              			<td>
+                      {{activity.time}}
+              			</td>
+              			<td>
+              				{{activity.room}}
+              			</td>
+              			<td>
+              				{{activity.activity}}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+        </li>
+        <li>
+            <h2><span>Tuesday 20<sup>th</sup></span></h2>
+            <div class="centre-scrollable" style="overflow:scroll;">
+              <table class="table table-bordered table-striped table-hover table-responsive" >
+                <thead>
+                  <tr>
+                    <th>
+                      Time
+                    </th>
+                    <th>
+                      Room
+                    </th>
+                    <th>
+                      Activity
+                    </th>
+                  </tr>
+                </thead>
+                <tbody ng-repeat="activity in schedule | filter: { date: '20/09/2016' }">
+                  <tr>
+                    <td>
+                      {{activity.time}}
+                    </td>
+                    <td>
+                      {{activity.room}}
+                    </td>
+                    <td>
+                      {{activity.activity}}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+          </li>
+        <li>
+            <h2><span>Thursday 22<sup>nd</sup></span></h2>
+            <div class="centre-scrollable" style="overflow:scroll;">
+              <table class="table table-bordered table-striped table-hover table-responsive" >
+                <thead>
+                  <tr>
+                    <th>
+                      Time
+                    </th>
+                    <th>
+                      Room
+                    </th>
+                    <th>
+                      Activity
+                    </th>
+                  </tr>
+                </thead>
+                <tbody ng-repeat="activity in schedule | filter: { date: '22/09/2016' }">
+                  <tr>
+                    <td>
+                      {{activity.time}}
+                    </td>
+                    <td>
+                      {{activity.room}}
+                    </td>
+                    <td>
+                      {{activity.activity}}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+              </li>
+        <li>
+            <h2><span>Friday 23<sup>rd</sup></span></h2>
+            <div class="centre-scrollable" style="overflow:scroll;">
+              <table class="table table-bordered table-striped table-hover table-responsive" >
+                <thead>
+                  <tr>
+                    <th>
+                      Time
+                    </th>
+                    <th>
+                      Room
+                    </th>
+                    <th>
+                      Activity
+                    </th>
+                  </tr>
+                </thead>
+                <tbody ng-repeat="activity in schedule | filter: { date: '23/09/2016' }">
+                  <tr>
+                    <td>
+                      {{activity.time}}
+                    </td>
+                    <td>
+                      {{activity.room}}
+                    </td>
+                    <td>
+                      {{activity.activity}}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+            </li>
+
+        <li>
+            <h2><span>Map</span></h2>
+            <div ng-include="'views/centres/map.html'"class="centre-scrollable" style="overflow:scroll;"></div>
+        </li>
+    </ol>
+    <noscript>
+        <p>Please enable JavaScript to get the full experience.</p>
+    </noscript>
+</div>
+<script>
+$('.accordion').liteAccordion();
+</script>

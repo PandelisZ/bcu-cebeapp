@@ -34,16 +34,20 @@ angular
         controller: 'CeberouteCtrl',
         controllerAs: 'cebeRoute'
       })
-      //Email page for requestion assitance from SSA central team
-      .when('/email', {
-        templateUrl: 'views/email.html',
-        controller: 'EmailCtrl',
-        controllerAs: 'email'
-      })
       .when('/centres/:id', {
         templateUrl: 'views/centres.html',
         controller: 'CentresCtrl',
         controllerAs: 'centres'
+      })
+      .when('/cource/:id', {
+        templateUrl: 'views/cource.html',
+        controller: 'CourceCtrl',
+        controllerAs: 'cource'
+      })
+      .when('/email', {
+        templateUrl: 'views/email.html',
+        controller: 'EmailCtrl',
+        controllerAs: 'email'
       })
       .otherwise({
         redirectTo: '/'

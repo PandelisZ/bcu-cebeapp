@@ -66,6 +66,31 @@ body {
   }
 }
 
+.mailinput {
+  width: 500px;
+  height: 400px;
+}
+
+#submit {
+  background-color: #835c81;
+  color: white;
+  width: 100%;
+  border: none;
+  height: 60px;
+}
+
+#submit:hover {
+  background-color: #2879b1;
+}
+
+#form {
+  width: 500px;
+}
+
+#no-display {
+  display: none;
+}
+
 .navbar {
   height: 150px;
 

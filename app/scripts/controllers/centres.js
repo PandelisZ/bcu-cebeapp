@@ -13,4 +13,5 @@ angular.module('cebeApp')
     $scope.centre = $routeParams.id;
 
 
+
   });
